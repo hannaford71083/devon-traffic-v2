@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<head>
+  <title>David Hannaford's Portfolio site</title>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="description" content="David Hannaford Portfolio site">
+  <meta name="keywords" content="David, Hannaford, Web, Developer, Portfolio">
+  <meta name="author" content="David Hannaford">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!--<link rel="stylesheet" href="styles/jquery-ui.css">-->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+
+</head>
+
+<body>
+  <section class="billboard-page billboard-page-compact">
+    <div class="section-container">
+      <h1>David Hannaford - Web Developer</h1>
+    </div>
+  </section>
+
+  <div id="mapid"></div>
+
+
+  <section class="section-container info-section light-bg">
+    <div class="info-section__data">
+      <h4 style="margin-top:0px;margin-bottom:5px; ">Devon Road Traffic</h4>
+
+      <table>
+        <tr>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td style="width:200px">
+            <label for="vehicle">Vehicle</label>
+            <br>Road:
+            <br>CP(collection point):
+            <br>Start junction:
+            <br>End junction:
+            <br>Easting:
+            <br>Northing:
+          </td>
+          <td>
+            <select id="vehicle" name="vehicle" onchange="updateSelectMenu()">
+              <option value="AllMotorVehicles" selected>AllMotorVehicles</option>
+              <option value="AllHGVs">AllHGVs</option>
+              <option value="PedalCycle">PedalCycles	</option>
+              <option value="Motorcycles">Motorcycles</option>
+              <option value="CarsTaxis">CarsTaxis</option>
+              <option value="BusesCoaches">BusesCoaches</option>
+              <option value="LightGoodsVehicles">LightGoodsVehicles</option>
+              <option value="V2AxleRigidHGV">V2AxleRigidHGV</option>
+              <option value="V3AxleRigidHGV">V3AxleRigidHGV</option>
+              <option value="V4or5AxleRigidHGV">V4or5AxleRigidHGV</option>
+              <option value="V4or5AxleRigidHGV">V4or5AxleRigidHGV</option>
+              <option value="V4or5AxleRigidHGV">V4or5AxleRigidHGV</option>
+              <option value="V3or4AxleArticHGV">V3or4AxleArticHGV</option>
+              <option value="V5AxleArticHGV">V5AxleArticHGV</option>
+              <option value="V6orMoreAxleArticHGV">V6orMoreAxleArticHGV</option>
+            </select>
+            <br><span class="details-road"></span>
+            <br><span class="details-cp"></span>
+            <br><span class="details-start-junc"></span>
+            <br><span class="details-end-junc"></span>
+            <br><span class="details-east"></span>
+            <br><span class="details-north"></span>
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+    <div class="info-section__chart">
+      <div class="info-section__chart-info">
+
+        <p>Explore the data by...</p>
+        <ul>
+          <li>Casting mouse over points on road</li>
+          <li>Adjust 'Vehicle' dropdown to left</li>
+        </ul>
+      </div>
+      <div id='cp-vol-v-year'></div>
+    </div>
+
+  </section>
+
+
+  <footer style="padding:8px 0px">
+    <div class="footer-container">
+      <a class="home-link" href="/">Home</a>  <a class="email-link" href="mailto:hannaford71083@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <script src="scripts/d3.js"></script>
+  <script src="scripts/jscrossfilter.js"></script>
+  <script src="scripts/dc.js"></script>
+  <script src="scripts/roads.json"></script>
+  <script src="scripts/traffic-data.json"></script>
+  <script src="scripts/main.js"></script>
+  <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+
+
+</body>

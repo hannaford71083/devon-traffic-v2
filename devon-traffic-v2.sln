@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{678B1340-56F3-409A-8B58-3D8C99FCC2C9}"
+	ProjectSection(SolutionItems) = preProject
+		devon-traffic-v2.html = devon-traffic-v2.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{A4C6D72F-7080-4DA1-8C16-2785DA4A0AA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{F5BFC1A2-F851-4E6E-8F2F-C709CFFD2A4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "styles", "styles", "{9A40F84C-B235-4C45-8FE0-E41B7992B8CE}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4C6D72F-7080-4DA1-8C16-2785DA4A0AA6} = {678B1340-56F3-409A-8B58-3D8C99FCC2C9}
+		{F5BFC1A2-F851-4E6E-8F2F-C709CFFD2A4F} = {678B1340-56F3-409A-8B58-3D8C99FCC2C9}
+		{9A40F84C-B235-4C45-8FE0-E41B7992B8CE} = {678B1340-56F3-409A-8B58-3D8C99FCC2C9}
+	EndGlobalSection
+EndGlobal
